@@ -1,0 +1,30 @@
+{
+  "name": "wallpaper-provider",
+  "version": "1.0.0",
+  "description": "A simple wallpaper randomizer",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --recursive",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Salman-Shaik/Wallpaper-Provider.git"
+  },
+  "author": "Salman Shaik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Salman-Shaik/Wallpaper-Provider/issues"
+  },
+  "homepage": "https://github.com/Salman-Shaik/Wallpaper-Provider#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
