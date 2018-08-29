@@ -37,7 +37,7 @@ let fileHandler = (fs, filePath, logData) => {
 
 let fileAsyncCallback = (err, message = '') => {
   if (err) {
-    throw err;
+    console.log(tos(err));
   }
   console.log(message);
 };
