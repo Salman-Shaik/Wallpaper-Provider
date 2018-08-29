@@ -8,7 +8,7 @@ let logger = (req, res, next) => {
 
 let fileLogger = (req, res, next) => {
   let date = new Date();
-  let filePath = `./logs/${date.toDateString()}.log`;
+  let filePath = `./logs/${date.toDateString().replace(' ','_')}.log`;
   let logData = getLogData(req, res, date);
   fileHandler(fs, filePath, logData);
   next();
